@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlockChain.Common.Enums
+namespace BlockChain.Domain.Enums
 {
     public enum BlockchainType
     {

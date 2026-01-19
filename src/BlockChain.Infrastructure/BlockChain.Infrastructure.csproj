@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\BlockChain.Common\BlockChain.Common.csproj" />
+    <ProjectReference Include="..\BlockChain.Domain\BlockChain.Domain.csproj" />
     <ProjectReference Include="..\BlockChain.Application\BlockChain.Application.csproj" />
   </ItemGroup>
 

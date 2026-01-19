@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockChain.Api", "src\Block
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockChain.Application", "src\BlockChain.Application\BlockChain.Application.csproj", "{293EADBE-1AB4-4E60-8263-C15E3DB53B9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockChain.DataAccess", "src\BlockChain.DataAccess\BlockChain.DataAccess.csproj", "{E92CCA88-BC8B-4C97-8E68-4A683CEEE745}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockChain.Infrastructure", "src\BlockChain.Infrastructure\BlockChain.Infrastructure.csproj", "{E92CCA88-BC8B-4C97-8E68-4A683CEEE745}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "99. Tests", "99. Tests", "{0AB3BF05-4346-4AA6-1389-037BE0695223}"
 EndProject
@@ -17,17 +17,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockChain.UnitTests", "tes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockChain.IntegrationTests", "tests\BlockChain.IntegrationTests\BlockChain.IntegrationTests.csproj", "{CA5CD6CB-74B3-49B7-9833-473C81D694B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockChain.FunctionalTests", "tests\BlockChain.FunctionalTests\BlockChain.FunctionalTests.csproj", "{6352D3F1-E6F2-4355-90A3-069A6B7FE8B3}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00. Solution Items", "00. Solution Items", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10. Common", "10. Common", "{83F19C5C-A644-4CEB-9A88-0388BD4AB6FA}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10. Domain", "10. Domain", "{83F19C5C-A644-4CEB-9A88-0388BD4AB6FA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "20. BlockChainApi", "20. BlockChainApi", "{1D4474D9-E620-4979-9792-5C862B0D1212}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "50. DataAccess", "50. DataAccess", "{D615E4EE-E104-4DC5-BA6C-BA8D6AD5F877}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "50. Infrastructure", "50. Infrastructure", "{D615E4EE-E104-4DC5-BA6C-BA8D6AD5F877}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockChain.Common", "src\BlockChain.Common\BlockChain.Common.csproj", "{D5956388-49D0-4642-AA5D-B01567782CD5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockChain.Domain", "src\BlockChain.Domain\BlockChain.Domain.csproj", "{D5956388-49D0-4642-AA5D-B01567782CD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockChain.FunctionalTests", "tests\BlockChain.FunctionalTests\BlockChain.FunctionalTests.csproj", "{844E6958-C9E1-4977-A60C-88A194208019}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,18 +97,6 @@ Global
 		{CA5CD6CB-74B3-49B7-9833-473C81D694B9}.Release|x64.Build.0 = Release|Any CPU
 		{CA5CD6CB-74B3-49B7-9833-473C81D694B9}.Release|x86.ActiveCfg = Release|Any CPU
 		{CA5CD6CB-74B3-49B7-9833-473C81D694B9}.Release|x86.Build.0 = Release|Any CPU
-		{6352D3F1-E6F2-4355-90A3-069A6B7FE8B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6352D3F1-E6F2-4355-90A3-069A6B7FE8B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6352D3F1-E6F2-4355-90A3-069A6B7FE8B3}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{6352D3F1-E6F2-4355-90A3-069A6B7FE8B3}.Debug|x64.Build.0 = Debug|Any CPU
-		{6352D3F1-E6F2-4355-90A3-069A6B7FE8B3}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{6352D3F1-E6F2-4355-90A3-069A6B7FE8B3}.Debug|x86.Build.0 = Debug|Any CPU
-		{6352D3F1-E6F2-4355-90A3-069A6B7FE8B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6352D3F1-E6F2-4355-90A3-069A6B7FE8B3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6352D3F1-E6F2-4355-90A3-069A6B7FE8B3}.Release|x64.ActiveCfg = Release|Any CPU
-		{6352D3F1-E6F2-4355-90A3-069A6B7FE8B3}.Release|x64.Build.0 = Release|Any CPU
-		{6352D3F1-E6F2-4355-90A3-069A6B7FE8B3}.Release|x86.ActiveCfg = Release|Any CPU
-		{6352D3F1-E6F2-4355-90A3-069A6B7FE8B3}.Release|x86.Build.0 = Release|Any CPU
 		{D5956388-49D0-4642-AA5D-B01567782CD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D5956388-49D0-4642-AA5D-B01567782CD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5956388-49D0-4642-AA5D-B01567782CD5}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -123,6 +109,18 @@ Global
 		{D5956388-49D0-4642-AA5D-B01567782CD5}.Release|x64.Build.0 = Release|Any CPU
 		{D5956388-49D0-4642-AA5D-B01567782CD5}.Release|x86.ActiveCfg = Release|Any CPU
 		{D5956388-49D0-4642-AA5D-B01567782CD5}.Release|x86.Build.0 = Release|Any CPU
+		{844E6958-C9E1-4977-A60C-88A194208019}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{844E6958-C9E1-4977-A60C-88A194208019}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{844E6958-C9E1-4977-A60C-88A194208019}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{844E6958-C9E1-4977-A60C-88A194208019}.Debug|x64.Build.0 = Debug|Any CPU
+		{844E6958-C9E1-4977-A60C-88A194208019}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{844E6958-C9E1-4977-A60C-88A194208019}.Debug|x86.Build.0 = Debug|Any CPU
+		{844E6958-C9E1-4977-A60C-88A194208019}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{844E6958-C9E1-4977-A60C-88A194208019}.Release|Any CPU.Build.0 = Release|Any CPU
+		{844E6958-C9E1-4977-A60C-88A194208019}.Release|x64.ActiveCfg = Release|Any CPU
+		{844E6958-C9E1-4977-A60C-88A194208019}.Release|x64.Build.0 = Release|Any CPU
+		{844E6958-C9E1-4977-A60C-88A194208019}.Release|x86.ActiveCfg = Release|Any CPU
+		{844E6958-C9E1-4977-A60C-88A194208019}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -133,8 +131,8 @@ Global
 		{E92CCA88-BC8B-4C97-8E68-4A683CEEE745} = {D615E4EE-E104-4DC5-BA6C-BA8D6AD5F877}
 		{4723E1A1-FE60-4F3B-B204-03FD8B3CABD8} = {0AB3BF05-4346-4AA6-1389-037BE0695223}
 		{CA5CD6CB-74B3-49B7-9833-473C81D694B9} = {0AB3BF05-4346-4AA6-1389-037BE0695223}
-		{6352D3F1-E6F2-4355-90A3-069A6B7FE8B3} = {0AB3BF05-4346-4AA6-1389-037BE0695223}
 		{D5956388-49D0-4642-AA5D-B01567782CD5} = {83F19C5C-A644-4CEB-9A88-0388BD4AB6FA}
+		{844E6958-C9E1-4977-A60C-88A194208019} = {0AB3BF05-4346-4AA6-1389-037BE0695223}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4BEF2FD9-DCA3-40A2-9B61-0ED481938B56}

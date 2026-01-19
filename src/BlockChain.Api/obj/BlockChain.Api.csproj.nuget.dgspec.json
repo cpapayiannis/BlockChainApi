@@ -35,8 +35,8 @@
               "C:\\Users\\ChristosP\\source\\repos\\BlockChainApi\\src\\BlockChain.Application\\BlockChain.Application.csproj": {
                 "projectPath": "C:\\Users\\ChristosP\\source\\repos\\BlockChainApi\\src\\BlockChain.Application\\BlockChain.Application.csproj"
               },
-              "C:\\Users\\ChristosP\\source\\repos\\BlockChainApi\\src\\BlockChain.DataAccess\\BlockChain.DataAccess.csproj": {
-                "projectPath": "C:\\Users\\ChristosP\\source\\repos\\BlockChainApi\\src\\BlockChain.DataAccess\\BlockChain.DataAccess.csproj"
+              "C:\\Users\\ChristosP\\source\\repos\\BlockChainApi\\src\\BlockChain.Infrastructure\\BlockChain.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\ChristosP\\source\\repos\\BlockChainApi\\src\\BlockChain.Infrastructure\\BlockChain.Infrastructure.csproj"
               }
             }
           }
@@ -57,11 +57,35 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.1, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[6.1.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[10.1.0, )"
             }
           },
           "imports": [
@@ -115,8 +139,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ChristosP\\source\\repos\\BlockChainApi\\src\\BlockChain.Common\\BlockChain.Common.csproj": {
-                "projectPath": "C:\\Users\\ChristosP\\source\\repos\\BlockChainApi\\src\\BlockChain.Common\\BlockChain.Common.csproj"
+              "C:\\Users\\ChristosP\\source\\repos\\BlockChainApi\\src\\BlockChain.Domain\\BlockChain.Domain.csproj": {
+                "projectPath": "C:\\Users\\ChristosP\\source\\repos\\BlockChainApi\\src\\BlockChain.Domain\\BlockChain.Domain.csproj"
               }
             }
           }
@@ -136,6 +160,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -156,14 +186,14 @@
         }
       }
     },
-    "C:\\Users\\ChristosP\\source\\repos\\BlockChainApi\\src\\BlockChain.Common\\BlockChain.Common.csproj": {
+    "C:\\Users\\ChristosP\\source\\repos\\BlockChainApi\\src\\BlockChain.Domain\\BlockChain.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ChristosP\\source\\repos\\BlockChainApi\\src\\BlockChain.Common\\BlockChain.Common.csproj",
-        "projectName": "BlockChain.Common",
-        "projectPath": "C:\\Users\\ChristosP\\source\\repos\\BlockChainApi\\src\\BlockChain.Common\\BlockChain.Common.csproj",
+        "projectUniqueName": "C:\\Users\\ChristosP\\source\\repos\\BlockChainApi\\src\\BlockChain.Domain\\BlockChain.Domain.csproj",
+        "projectName": "BlockChain.Domain",
+        "projectPath": "C:\\Users\\ChristosP\\source\\repos\\BlockChainApi\\src\\BlockChain.Domain\\BlockChain.Domain.csproj",
         "packagesPath": "C:\\Users\\ChristosP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ChristosP\\source\\repos\\BlockChainApi\\src\\BlockChain.Common\\obj\\",
+        "outputPath": "C:\\Users\\ChristosP\\source\\repos\\BlockChainApi\\src\\BlockChain.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -221,14 +251,14 @@
         }
       }
     },
-    "C:\\Users\\ChristosP\\source\\repos\\BlockChainApi\\src\\BlockChain.DataAccess\\BlockChain.DataAccess.csproj": {
+    "C:\\Users\\ChristosP\\source\\repos\\BlockChainApi\\src\\BlockChain.Infrastructure\\BlockChain.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ChristosP\\source\\repos\\BlockChainApi\\src\\BlockChain.DataAccess\\BlockChain.DataAccess.csproj",
-        "projectName": "BlockChain.DataAccess",
-        "projectPath": "C:\\Users\\ChristosP\\source\\repos\\BlockChainApi\\src\\BlockChain.DataAccess\\BlockChain.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\ChristosP\\source\\repos\\BlockChainApi\\src\\BlockChain.Infrastructure\\BlockChain.Infrastructure.csproj",
+        "projectName": "BlockChain.Infrastructure",
+        "projectPath": "C:\\Users\\ChristosP\\source\\repos\\BlockChainApi\\src\\BlockChain.Infrastructure\\BlockChain.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\ChristosP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ChristosP\\source\\repos\\BlockChainApi\\src\\BlockChain.DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\ChristosP\\source\\repos\\BlockChainApi\\src\\BlockChain.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -252,8 +282,8 @@
               "C:\\Users\\ChristosP\\source\\repos\\BlockChainApi\\src\\BlockChain.Application\\BlockChain.Application.csproj": {
                 "projectPath": "C:\\Users\\ChristosP\\source\\repos\\BlockChainApi\\src\\BlockChain.Application\\BlockChain.Application.csproj"
               },
-              "C:\\Users\\ChristosP\\source\\repos\\BlockChainApi\\src\\BlockChain.Common\\BlockChain.Common.csproj": {
-                "projectPath": "C:\\Users\\ChristosP\\source\\repos\\BlockChainApi\\src\\BlockChain.Common\\BlockChain.Common.csproj"
+              "C:\\Users\\ChristosP\\source\\repos\\BlockChainApi\\src\\BlockChain.Domain\\BlockChain.Domain.csproj": {
+                "projectPath": "C:\\Users\\ChristosP\\source\\repos\\BlockChainApi\\src\\BlockChain.Domain\\BlockChain.Domain.csproj"
               }
             }
           }

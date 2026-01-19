@@ -1,7 +1,7 @@
-﻿using BlockChain.Common.Classes;
+﻿using BlockChain.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace BlockChain.DataAccess.Classes;
+namespace BlockChain.Infrastructure.Classes;
 
 public class AppDbContext : DbContext
 {

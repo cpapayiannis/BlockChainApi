@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlockChain.DataAccess.Classes
+namespace BlockChain.Infrastructure.Classes
 {
     public class AppDbContextFactory : IDesignTimeDbContextFactory<AppDbContext>
     {

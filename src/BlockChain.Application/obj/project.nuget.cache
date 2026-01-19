@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4vA+jV70GNw=",
+  "dgSpecHash": "Yjfek1bnZpM=",
   "success": true,
   "projectFilePath": "C:\\Users\\ChristosP\\source\\repos\\BlockChainApi\\src\\BlockChain.Application\\BlockChain.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ChristosP\\.nuget\\packages\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512"
+  ],
   "logs": []
 }
