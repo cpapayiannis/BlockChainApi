@@ -29,7 +29,7 @@ public class SnapshotService : ISnapshotService
             CreatedAt = DateTime.UtcNow
         };
 
-       _repository.AddSnapshot(snapshot, ct);
+       _repository.AddSnapshot(snapshot);
         await _uow.SaveChangesAsync(ct);
         return snapshot.Id;
 
@@ -59,7 +59,7 @@ public class SnapshotService : ISnapshotService
                 CreatedAt = DateTime.UtcNow
             };
 
-            _repository.AddSnapshot(snapshot, ct);
+            _repository.AddSnapshot(snapshot);
             await _uow.SaveChangesAsync(ct);
             ids.Add(snapshot.Id);
         }

@@ -9,7 +9,7 @@ namespace BlockChain.Application.Interfaces
 {
     public interface ISnapshotRepository
     {
-        Guid AddSnapshot(BlockchainSnapshot snapshot, CancellationToken ct);
+        Guid AddSnapshot(BlockchainSnapshot snapshot);
 
         Task<IReadOnlyList<BlockchainSnapshot>> GetHistoryAsync(
             string chain,

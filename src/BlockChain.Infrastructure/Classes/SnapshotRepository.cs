@@ -10,7 +10,7 @@ namespace BlockChain.Infrastructure.Classes
 
         public SnapshotRepository(AppDbContext db) => _db = db;
 
-        public Guid AddSnapshot(BlockchainSnapshot snapshot, CancellationToken ct)
+        public Guid AddSnapshot(BlockchainSnapshot snapshot)
         {
             _db.BlockchainSnapshots.Add(snapshot);
             return snapshot.Id;
