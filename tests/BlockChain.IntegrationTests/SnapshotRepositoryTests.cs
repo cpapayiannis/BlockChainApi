@@ -28,7 +28,9 @@ public class SnapshotRepositoryTests
             Chain = "BTC_MAIN",
             Json = "old",
             CreatedAt = DateTime.UtcNow.AddMinutes(-10)
-        }, CancellationToken.None);
+        });
+        await ctx.SaveChangesAsync();
+
 
         repo.AddSnapshot(new BlockchainSnapshot
         {
@@ -36,7 +38,9 @@ public class SnapshotRepositoryTests
             Chain = "BTC_MAIN",
             Json = "new",
             CreatedAt = DateTime.UtcNow
-        }, CancellationToken.None);
+        });
+        await ctx.SaveChangesAsync();
+
 
         var latest = await repo.GetLatestAsync("BTC_MAIN", CancellationToken.None);
 

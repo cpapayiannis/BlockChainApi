@@ -16,8 +16,8 @@ BlockChainApi
 ├── src
 │   ├── BlockChain.Api           # API layer (Controllers, DI, Swagger, Health)
 │   ├── BlockChain.Application   # Application layer (Interfaces, Services, DTOs)
-│   ├── BlockChain.DataAccess    # Infrastructure (EF Core, Repositories, Unit of Work)
-│   └── BlockChain.Common        # Shared entities & enums
+│   ├── BlockChain.Infrastructure    # Infrastructure (EF Core, Repositories, Unit of Work)
+│   └── BlockChain.Domain        # Shared entities & enums
 │
 ├── tests
 │   ├── BlockChain.UnitTests
